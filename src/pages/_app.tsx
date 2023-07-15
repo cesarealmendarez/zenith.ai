@@ -8,7 +8,6 @@ const playfair_Display = Playfair_Display({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-
     return (
         <>
             <style jsx global>{`

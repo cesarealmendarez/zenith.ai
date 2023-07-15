@@ -20,6 +20,29 @@ export default function Index() {
         exit: { y: 20, opacity: 0 },
     }
 
+    const faqs = [
+        {
+            "id": 0,
+            "question": "How can Zenith supercharge my business?",
+            "answer": "Zenith can assist in designing, developing and deployment your business website. We also will work tirelessly to seamlessly integrate AI systems into your business workflow. From GPT Chatbots to content generation system, we are confident we can find a way to better equip your business through tech."
+        },
+        {
+            "id": 1,
+            "question": "Are your services suitable for small business?",
+            "answer": "Of course, in fact we prefer clients who are currently still growing. We believe this way we can work closer with our client to better understand their wants and needs and see the realtime growth together!"
+        },
+        {
+            "id": 2,
+            "question": "Do you offer continued support after an initial service deployment?",
+            "answer": "Most definetly, as we better undetstand a clients particular needs, we can access how our team can continously maintain and build upon our inital builds."
+        },
+        {
+            "id": 3,
+            "question": "What does a typical timeline between us and our clients look like?",
+            "answer": "Zenith can assist in designing, developing and deployment your business website. We also will work tirelessly to seamlessly integrate AI systems into your business workflow. From GPT Chatbots to content generation system, we are confident we can find a way to better equip your business through tech."
+        }
+    ]
+
     return (
         <>
             <div className="relative w-full">
@@ -72,9 +95,9 @@ export default function Index() {
 
                 <div className="py-24">
                     <div className="max-w-5xl flex flex-col items-center mx-auto px-4 md:px-6 lg:px-8 pt-0 space-y-6">
-                        <p className="text-center text-lg text-green-500 font-light tracking-tighter">Morningside AI is your full-cycle AI development partner.</p>
+                        {/* <p className="text-center text-lg text-green-500 font-light tracking-tighter">Morningside AI is your full-cycle AI development partner.</p> */}
 
-                        <h1 className="text-center text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">Comprehensive Web Solutions</h1>
+                        <h1 className="text-center text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">Comprehensive Growth Solutions</h1>
 
                         <p className="text-center text-lg text-neutral-800 font-light tracking-tighter">Morningside AI is your full-cycle AI development partner, from concept to production and beyond</p>
                         {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-y-6 w-full">
@@ -103,9 +126,9 @@ export default function Index() {
                                 <img src="https://framerusercontent.com/images/3UvsRX2tal7Ts7r8iY108Y7FM.png?scale-down-to=4096" className="h-6/6 ml-auto" />
                             </div>
                             <div className="my-auto">
-                                <p className="text-center md:text-left text-base text-green-500 font-semibold tracking-tighter">SEO Mastery</p>
+                                {/* <p className="text-center md:text-left text-base text-green-500 font-semibold tracking-tighter">SEO Mastery</p> */}
 
-                                <h1 className="text-center md:text-left text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">Expert Search Engine Optimization</h1>
+                                <h1 className="text-center md:text-left text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">Website Development</h1>
 
                                 <p className="text-center md:text-left text-base text-neutral-800 font-light tracking-tighter mt-4">Boost your website's visibility and drive organic traffic with our comprehensive SEO solutions. Our team of experts utilizes cutting-edge techniques and tools to optimize your website for search engines, ensuring higher rankings and better online presence.</p>
                             </div>
@@ -113,9 +136,9 @@ export default function Index() {
 
                         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-16 py-24">
                             <div className="order-last md:order-first">
-                                <p className="text-center md:text-left text-base text-green-500 font-semibold tracking-tighter">SEO Mastery</p>
+                                {/* <p className="text-center md:text-left text-base text-green-500 font-semibold tracking-tighter">SEO Mastery</p> */}
 
-                                <h1 className="text-center md:text-left text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">Website Development</h1>
+                                <h1 className="text-center md:text-left text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">GPT Chatbot Integration</h1>
 
                                 <p className="text-center md:text-left text-base text-neutral-800 font-light tracking-tighter mt-4">Boost your website's visibility and drive organic traffic with our comprehensive SEO solutions. Our team of experts utilizes cutting-edge techniques and tools to optimize your website for search engines, ensuring higher rankings and better online presence.</p>
                             </div>
@@ -129,9 +152,9 @@ export default function Index() {
                                 <img src="https://framerusercontent.com/images/3UvsRX2tal7Ts7r8iY108Y7FM.png?scale-down-to=4096" className="h-6/6 ml-auto" />
                             </div>
                             <div className="my-auto">
-                                <p className="text-center md:text-left text-base text-green-500 font-semibold tracking-tighter">SEO Mastery</p>
+                                {/* <p className="text-center md:text-left text-base text-green-500 font-semibold tracking-tighter">Search Engine Optimization</p> */}
 
-                                <h1 className="text-center md:text-left text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">Expert Search Engine Optimization</h1>
+                                <h1 className="text-center md:text-left text-4xl text-neutral-800 font-medium tracking-tighter md:text-5xl">Search Engine Optimization</h1>
 
                                 <p className="text-center md:text-left text-base text-neutral-800 font-light tracking-tighter mt-4">Boost your website's visibility and drive organic traffic with our comprehensive SEO solutions. Our team of experts utilizes cutting-edge techniques and tools to optimize your website for search engines, ensuring higher rankings and better online presence.</p>
                             </div>
@@ -147,25 +170,58 @@ export default function Index() {
                         <p className="text-center text-lg text-neutral-800 font-light tracking-tighter">Morningside AI is your full-cycle AI development partner, from concept to production and beyond. We're not just machine learning specialists, we're the team that helps startups and enterprises create cutting-edge AI products that optimize efficiency and accelerate.</p>
 
                         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <button className="col-span-1 flex flex-row items-center space-x-4 py-4 px-2 text-neutral-800 font-normal border-[1px] border-neutral-200 rounded-lg">
-                                <ChevronRight color="gray" />
-                                <p>Some FAQ Title Here</p>
-                            </button>
+                            {faqs.map((faq, faqIndex) => {
+                                return (
+                                    <Disclosure as="div" className="flex flex-row col-span-1 items-start text-left space-x-4 py-4 px-2 text-neutral-800 font-normal border-[1px] border-neutral-200 rounded-lg">
+                                        {({ open }) => (
+                                            <Disclosure.Button as="div" className="flex flex-row items-start text-left space-x-4">
+                                                <div className="flex flex-col justify-center items-start">
+                                                    <ChevronRight color="gray" />
+                                                </div>
+                                                <div className="space-y-6">
+                                                    <p>{faq.question}</p>
 
-                            <button className="col-span-1 flex flex-row items-center space-x-4 py-4 px-2 text-neutral-800 font-normal border-[1px] border-neutral-200 rounded-lg">
-                                <ChevronRight color="gray" />
-                                <p>Some FAQ Title Here</p>
-                            </button>
+                                                    <Disclosure.Panel>
+                                                        <p>{faq.answer}</p>
+                                                    </Disclosure.Panel>
+                                                </div>
+                                            </Disclosure.Button>
+                                        )}
+                                    </Disclosure>
+                                )
+                            })}
 
-                            <button className="col-span-1 flex flex-row items-center space-x-4 py-4 px-2 text-neutral-800 font-normal border-[1px] border-neutral-200 rounded-lg">
-                                <ChevronRight color="gray" />
-                                <p>Some FAQ Title Here</p>
-                            </button>
+                            {/* <Disclosure as="div" className="col-span-1 flex flex-row items-start text-left space-x-4 py-4 px-2 text-neutral-800 font-normal border-[1px] border-neutral-200 rounded-lg">
+                                {({ open }) => (
+                                    <Disclosure.Button as="div" className="flex flex-row items-start text-left space-x-4">
+                                        <div className="flex flex-col">
+                                            <ChevronRight color="gray" />
+                                        </div>
+                                        <div className="space-y-6">
+                                            <p>How can AI automation benefit my business?</p>
+                                            <Disclosure.Panel>
+                                                <p>How can AI automation benefit my business?</p>
+                                            </Disclosure.Panel>
+                                        </div>
+                                    </Disclosure.Button>
+                                )}
+                            </Disclosure>
 
-                            <button className="col-span-1 flex flex-row items-center space-x-4 py-4 px-2 text-neutral-800 font-normal border-[1px] border-neutral-200 rounded-lg">
-                                <ChevronRight color="gray" />
-                                <p>Some FAQ Title Here</p>
-                            </button>
+                            <Disclosure as="div" className="col-span-1 flex flex-row items-center text-left space-x-4 py-4 px-2 text-neutral-800 font-normal border-[1px] border-neutral-200 rounded-lg">
+                                {({ open }) => (
+                                    <Disclosure.Button as="div" className="flex flex-row items-start text-left space-x-4">
+                                        <div className="flex flex-col justify-center items-center">
+                                            <ChevronRight color="gray" />
+                                        </div>
+                                        <div className="space-y-4">
+                                            <p>How can AI automation benefit my business?</p>
+                                            <Disclosure.Panel>
+                                                <p>How can AI automation benefit my business?</p>
+                                            </Disclosure.Panel>
+                                        </div>
+                                    </Disclosure.Button>
+                                )}
+                            </Disclosure> */}
                         </div>
                     </div>
                 </div>
@@ -326,11 +382,11 @@ export default function Index() {
                                         </li>
 
                                         <li>
-                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">Meet the Team</a>
+                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">About Us</a>
                                         </li>
 
                                         <li>
-                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">Careers</a>
+                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">Solutions</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -340,7 +396,7 @@ export default function Index() {
 
                                     <ul className="mt-8 space-y-4 text-sm">
                                         <li>
-                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">Web Design/Development</a>
+                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">Web Design & Development</a>
                                         </li>
 
                                         <li>
@@ -348,7 +404,11 @@ export default function Index() {
                                         </li>
 
                                         <li>
-                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">AI Integration</a>
+                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">GPT Chatbot Integration</a>
+                                        </li>
+
+                                        <li>
+                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">AI Content Generation</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -372,7 +432,7 @@ export default function Index() {
 
                                     <ul className="mt-8 space-y-4 text-sm">
                                         <li>
-                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">hi@zenith.ai</a>
+                                            <a className="text-neutral-800 font-light transition hover:text-neutral-800/75" href="/">hello@zenith.ai</a>
                                         </li>
 
                                         <li>
@@ -393,7 +453,7 @@ export default function Index() {
                                     <span className="block md:inline">All rights reserved&nbsp;&nbsp;</span>
 
                                     <a
-                                        className="inline-block text-green-500 underline transition hover:text-green-500/75"
+                                        className="inline-block underline transition"
                                         href="/"
                                     >
                                         Terms & Conditions
@@ -402,7 +462,7 @@ export default function Index() {
                                     <span>&nbsp;&middot;&nbsp;</span>
 
                                     <a
-                                        className="inline-block text-green-500 underline transition hover:text-green-500/75"
+                                        className="inline-block underline transition"
                                         href="/"
                                     >
                                         Privacy Policy
