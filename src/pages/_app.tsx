@@ -1,8 +1,18 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Playfair_Display } from "@next/font/google"
+import { Playfair_Display, Montserrat, Space_Grotesk, Cinzel } from "@next/font/google"
 
 const playfair_Display = Playfair_Display({
+    subsets: [],
+    weight: []
+})
+
+// const montserrat = Montserrat({
+//     subsets: [],
+//     weight: []
+// })
+
+const cinzel = Cinzel({
     subsets: [],
     weight: []
 })

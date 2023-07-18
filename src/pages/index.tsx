@@ -246,11 +246,6 @@ export default function Index() {
                                     <h1 className="text-2xl md:text-center md:text-left text-neutral-800 font-medium tracking-tighter ml-2">Zenith AI</h1>
                                 </div>
 
-                                {/* <p className="mt-6 max-w-md text-center tracking-tighter text-neutral-800 font-light md:max-w-xs md:text-left">
-                                    Gain a competitive edge with the latest AI breakthroughs and updates - all in a 5 minute email.
-                                    Our AI experts sift through the clutter, honing in on the news that truly matters.
-                                </p> */}
-
                                 <p className="mt-8 max-w-md md:max-w-xs  md:text-left text-center tracking-tighter text-neutral-800 font-light transition hover:text-neutral-800/75">
                                     Gain a competitive edge with the latest AI breakthroughs and updates - all in a 5 minute email.
                                     Our AI experts sift through the clutter, honing in on the news that truly matters.
