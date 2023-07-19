@@ -156,7 +156,7 @@ export default function Index() {
                     </div>
                 </div>
 
-                <div className="py-24 bg-green-950">
+                {/* <div className="py-24 bg-green-950">
                     <div className="max-w-5xl flex flex-col items-center justify-center mx-auto px-4 md:px-6 lg:px-8 pt-0 space-y-6">
                         <h1 className="text-center text-4xl md:text-5xl text-white font-medium tracking-tighter">
                             Ready to level up with cutting edge tech?
@@ -174,7 +174,7 @@ export default function Index() {
                             👋&nbsp;&nbsp;&nbsp;Let's Talk Today
                         </a>
                     </div>
-                </div>
+                </div> */}
 
 
             </main>
