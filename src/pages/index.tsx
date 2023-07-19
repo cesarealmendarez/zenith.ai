@@ -176,13 +176,7 @@ export default function Index() {
                     </div>
                 </div>
 
-                {/* <footer className="pt-24">
-                    <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 md:px-6 lg:px-8 lg:pt-24 space-y-14">
-                        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
 
-                        </div>
-                    </div>
-                </footer> */}
             </main>
         </>
     )
