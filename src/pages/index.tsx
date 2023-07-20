@@ -3,6 +3,7 @@ import { useState, Fragment } from "react"
 import { Disclosure, Transition, Dialog } from "@headlessui/react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/router"
+import Head from "next/head"
 
 import { Bird, Menu, Facebook, Instagram, Dribbble, Twitter, Github, X, Phone, Mail, Linkedin } from "lucide-react"
 
@@ -55,7 +56,7 @@ export default function Index() {
             <main>
                 <header className="fixed top-0 left-0 right-0 z-40 md:static flex flex-row items-center px-8 py-4 bg-white/70 backdrop-blur-sm border-b-[1px] border-neutral-100">
                     <a href="/" rel="noreferrer" className="flex flex-row grow items-center">
-                        <Bird />
+                        <Bird className="text-neutral-800" />
 
                         <h1 className="text-left text-2xl text-neutral-800 font-medium tracking-tighter ml-2">
                             Zenith AI
@@ -206,7 +207,7 @@ export default function Index() {
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                             <div>
                                 <div className="flex flex-row items-center justify-center md:justify-start md:text-left">
-                                    <Bird />
+                                    <Bird className="text-neutral-800" />
 
                                     <h1 className="text-2xl md:text-center md:text-left text-neutral-800 font-medium tracking-tighter ml-2">Zenith AI</h1>
                                 </div>
