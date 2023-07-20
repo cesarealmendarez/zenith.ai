@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <title>Zenith AI</title>
             </Head>
+
             <style jsx global>{`
                 html {
                     font-family: ${playfair_Display.style.fontFamily};

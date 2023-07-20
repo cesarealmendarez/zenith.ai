@@ -3,7 +3,6 @@ import { useState, Fragment } from "react"
 import { Disclosure, Transition, Dialog } from "@headlessui/react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/router"
-import Head from "next/head"
 
 import { Bird, Menu, Facebook, Instagram, Dribbble, Twitter, Github, X, Phone, Mail, Linkedin } from "lucide-react"
 
@@ -28,26 +27,26 @@ export default function Index() {
         {
             id: 0,
             title: "🤖 GPT Chatbot Integration",
-            description: "Empower your website visitors with the expertise of our highly advanced Large Language Model. Our cutting-edge GPT Chatbot Integration is designed to seamlessly guide customers through your homepage, providing valuable assistance in lead generation, booking, and more. Explore the power of GPT as you navigate this site and witness the difference it can make to your online experience.",
-            image: "https://framerusercontent.com/images/3UvsRX2tal7Ts7r8iY108Y7FM.png?scale-down-to=4096"
+            description: "Empower your website visitors with the expertise of highly advanced Large Language Models. Our GPT Chatbot Integrations are designed to seamlessly guide customers through your homepage, providing valuable assistance in lead generation, recommendations, booking, and more. This automation learns the ins and outs of your products and will make a worlds difference in your customer's online experience.",
+            image: "https://notioly.com/wp-content/uploads/2023/04/228.Robot_.png"
         },
         {
             id: 1,
             title: "🖼️ AI Content Generation Systems",
-            description: "Boost your website's visibility and drive organic traffic with our comprehensive SEO solutions. Our team of experts utilizes cutting-edge techniques and tools to optimize your website for search engines, ensuring higher rankings and better online presence.",
-            image: "https://framerusercontent.com/images/TwojwVpws1RqKxAvxHAyjxy7OY.png?scale-down-to=4096"
+            description: "Effortlessly expedite marketing content generation of your products with AI. Need fresh product descriptions, email marketing content, optimized social media posts? Look no further, let our team create personalized systems that will dish content out on command!",
+            image: "https://notioly.com/wp-content/uploads/2022/01/27.Artist.png"
         },
         {
             id: 2,
             title: "📈 Search Engine Optimization",
-            description: "Elevate your website's visibility and attract organic traffic with our all-encompassing SEO solutions. Our team of seasoned experts harnesses the power of advanced techniques and state-of-the-art tools to optimize your website for search engines. Experience the benefits of higher rankings and an enhanced online presence, as we propel your website towards unparalleled success within spaces such as Google Search, Google Maps, etc.",
-            image: "https://framerusercontent.com/images/3UvsRX2tal7Ts7r8iY108Y7FM.png?scale-down-to=4096"
+            description: "Elevate your website's visibility and attract organic traffic with our all-encompassing SEO solutions. Our team harnesses the power of advanced techniques and state-of-the-art tools to optimize your website for search engines. Experience the benefits of higher rankings and an enhanced online presence, as we propel your website towards unparalleled success within spaces such as Google Search, Google Maps, and more.",
+            image: "https://notioly.com/wp-content/uploads/2023/04/221.Googling.png"
         },
         {
             id: 3,
             title: "🌐 Website Development",
-            description: "Boost your website's visibility and drive organic traffic with our comprehensive SEO solutions. Our team of experts utilizes cutting-edge techniques and tools to optimize your website for search engines, ensuring higher rankings and better online presence.",
-            image: "https://framerusercontent.com/images/TwojwVpws1RqKxAvxHAyjxy7OY.png?scale-down-to=4096"
+            description: "Get online at breakneck speeds. We'll work tirelessly to construct a beautifully reliable website to showcase to the world what your business is all about!",
+            image: "https://notioly.com/wp-content/uploads/2022/04/123.Website-builder.png"
         }
     ]
 
@@ -64,17 +63,29 @@ export default function Index() {
                     </a>
 
                     <div className="hidden md:flex flex-row items-center space-x-6">
-                        <button onClick={() => { }} className="text-right text-md text-neutral-800 font-light tracking-tighter">
+                        <button
+                            className="text-right text-md text-neutral-800 font-light tracking-tighter"
+                            onClick={() => {
+                                const aboutUs = document.getElementById("about-us")
+                                aboutUs?.scrollIntoView({ behavior: "smooth", block: "start" })
+                            }}
+                        >
                             About Us
                         </button>
 
-                        <button onClick={() => { }} className="text-right text-md text-neutral-800 font-light tracking-tighter">
-                            Solutions
+                        <button
+                            className="text-right text-md text-neutral-800 font-light tracking-tighter"
+                            onClick={() => {
+                                const solutions = document.getElementById("solutions")
+                                solutions?.scrollIntoView({ behavior: "smooth", block: "start" })
+                            }}
+                        >
+                            Our Solutions
                         </button>
 
-                        <button onClick={() => { }} className="text-right text-md text-neutral-800 font-light tracking-tighter">
+                        {/* <button onClick={() => { }} className="text-right text-md text-neutral-800 font-light tracking-tighter">
                             FAQs
-                        </button>
+                        </button> */}
 
                         <a href="https://zenith-ai-4888.mailchimpsites.com" rel="noreferrer" target="_blank" className="text-right text-md text-white font-light bg-neutral-900 px-4 py-2 rounded-full">
                             Book Consulation
@@ -89,7 +100,7 @@ export default function Index() {
 
                 </header>
 
-                <div className="max-w-5xl flex flex-col items-center mx-auto px-4 md:px-6 lg:px-8 h-screen pt-32 space-y-6">
+                <div id="hero" className="max-w-5xl flex flex-col items-center mx-auto px-4 md:px-6 lg:px-8 h-screen pt-32 space-y-6">
                     <div>
                         <h1 className="text-center text-4xl md:text-6xl text-neutral-800 font-medium tracking-tighter">
                             Supercharge Your
@@ -119,13 +130,19 @@ export default function Index() {
                             ☎️&nbsp;&nbsp;&nbsp;Book Consultation
                         </a>
 
-                        <a href="#" rel="noreferrer" className="w-80 md:w-auto text-center text-xl text-neutral-800 font-light tracking-tigher border-2 border-neutral-950 px-6 md:px-8 py-4 rounded-full">
+                        <button
+                            className="w-80 md:w-auto text-center text-xl text-neutral-800 font-light tracking-tigher border-2 border-neutral-950 px-6 md:px-8 py-4 rounded-full"
+                            onClick={() => {
+                                const solutions = document.getElementById("solutions")
+                                solutions?.scrollIntoView({ behavior: "smooth", block: "start" })
+                            }}
+                        >
                             ⚡️&nbsp;&nbsp;&nbsp;View Our Solutions
-                        </a>
+                        </button>
                     </div>
                 </div>
 
-                <div className="py-24 bg-neutral-900">
+                <div id="about-us" className="py-24 bg-green-950">
                     <div className="max-w-5xl flex flex-col items-center justify-center mx-auto px-4 md:px-6 lg:px-8 pt-0 space-y-6">
                         <h1 className="text-center text-4xl md:text-5xl text-white font-medium tracking-tighter">
                             About Us
@@ -133,13 +150,13 @@ export default function Index() {
 
                         <p className="text-center text-lg text-white font-light tracking-tighter">
                             {/* Zenith AI looks to help small and medium sized business grow by exploring ways cutting edge tech can make your workflows stronger, better, and faster.We pride ourselves in working as close as possible with our clients guiding them from initial implementation to unimaginable  growth.Our founding principles lays in a simple law, stating we only rake in dough, once you’re rolling in it! */}
-                            Welcome, Zenith AI is dedicated to empowering small and medium-sized businesses to reach new heights through the transformative power of cutting-edge Artificial Intelligence technology. Our mission is to enhance your workflows, making them stronger, better, and faster.
-                            We take immense pride in our client-centric approach by forming close partnerships with our clients, guiding them every step of the way, from the initial implementation of our solutions to achieving unimaginable growth. Our success is measured by your success.
+                            Welcome! Zenith AI is dedicated to empowering businesses to reach new heights through the transformative power of cutting-edge Artificial Intelligence technology. Our mission is to enhance your workflows, making them stronger, better, and faster.
+                            We take immense pride in our client-centric approach, forming close partnerships with our clients, guiding them every step of the way, from the initial implementation to unimaginable scale!
                         </p>
                     </div>
                 </div>
 
-                <div className="py-24">
+                <div id="solutions" className="py-24">
                     <div className="max-w-5xl flex flex-col items-center justify-center mx-auto px-4 md:px-6 lg:px-8 pt-0 space-y-6">
                         <h1 className="text-center text-4xl md:text-5xl text-neutral-800 font-medium tracking-tighter">
                             Our Solutions
@@ -154,8 +171,8 @@ export default function Index() {
                                 return (
                                     <>
                                         {((solutionIDX + 1) % 2) === 1 ?
-                                            <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-16 py-24">
-                                                <img src={solution.image} className="h-6/6 ml-auto" />
+                                            <div id={`solution-${solution.id}`} className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-16 py-24">
+                                                <img src={solution.image} className="1/6 md:h-5/6 ml-auto" />
 
                                                 <div className="my-auto">
                                                     <h1 className="text-center md:text-left text-4xl md:text-5xl text-neutral-800 font-medium tracking-tighte mt-4">{solution.title}</h1>
@@ -171,7 +188,7 @@ export default function Index() {
                                                     <p className="text-center md:text-left text-lg text-neutral-800 font-light tracking-tighter mt-4">{solution.description}</p>
                                                 </div>
 
-                                                <img src={solution.image} className="h-6/6 ml-auto" />
+                                                <img src={solution.image} className="1/6 md:h-5/6 ml-auto" />
                                             </div>
                                         }
                                     </>
@@ -188,7 +205,7 @@ export default function Index() {
                         </h1>
 
                         <p className="text-center text-lg text-white font-light tracking-tighter">
-                            Zenith AI is ready to start building when you are! Let's chat and unlock a world of personalized solutions for your business, where innovation meets your unique needs.
+                            Zenith AI is ready to start building when you are! Let's chat and unlock a world of personalized solutions for your business.
                         </p>
 
                         <a
@@ -217,7 +234,7 @@ export default function Index() {
                                     Let us handle the heavy lifting by deploying cutting-edge technology onto your workflows!
                                 </p>
 
-                                <ul className="mt-8 flex justify-center gap-6 md:justify-start md:gap-8">
+                                {/* <ul className="mt-8 flex justify-center gap-6 md:justify-start md:gap-8">
                                     <li>
                                         <a
                                             href="#"
@@ -277,7 +294,7 @@ export default function Index() {
                                             <Dribbble />
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> */}
                             </div>
 
                             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:grid-cols-4 lg:col-span-2">
@@ -286,52 +303,61 @@ export default function Index() {
 
                                     <ul className="mt-8 space-y-4 text-sm">
                                         <li>
-                                            <a
-                                                href="#"
-                                                rel="noreferrer"
+                                            <button
                                                 className="text-neutral-800 font-light transition hover:text-neutral-800/75"
+                                                onClick={() => {
+                                                    const hero = document.getElementById("hero")
+                                                    hero?.scrollIntoView({ behavior: "smooth", block: "start" })
+                                                }}
                                             >
                                                 Welcome
-                                            </a>
+                                            </button>
                                         </li>
 
                                         <li>
-                                            <a
-                                                href="#"
-                                                rel="noreferrer"
+                                            <button
                                                 className="text-neutral-800 font-light transition hover:text-neutral-800/75"
+                                                onClick={() => {
+                                                    const aboutUs = document.getElementById("about-us")
+                                                    aboutUs?.scrollIntoView({ behavior: "smooth", block: "start" })
+                                                }}
                                             >
                                                 About Us
-                                            </a>
+                                            </button>
                                         </li>
 
                                         <li>
-                                            <a
-                                                href="#"
-                                                rel="noreferrer"
+                                            <button
                                                 className="text-neutral-800 font-light transition hover:text-neutral-800/75"
+                                                onClick={() => {
+                                                    const solutions = document.getElementById("solutions")
+                                                    solutions?.scrollIntoView({ behavior: "smooth", block: "start" })
+                                                }}
                                             >
-                                                Solutions
-                                            </a>
+                                                Our Solutions
+                                            </button>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div className="text-center md:text-left">
-                                    <p className="text-lg text-neutral-800 font-medium">Our Services</p>
+                                    <p className="text-lg text-neutral-800 font-medium">Our Solutions</p>
 
                                     <ul className="mt-8 space-y-4 text-sm" >
                                         {
-                                            solutions.map((solution) => {
+                                            solutions.map((solution, solutionIDX) => {
                                                 return (
                                                     <li>
-                                                        <a
-                                                            href="#"
-                                                            rel="noreferrer"
+                                                        <button
                                                             className="text-neutral-800 font-light transition hover:text-neutral-800/75"
+                                                            onClick={() => {
+                                                                // const solution = document.getElementById(`solution-${solutionID}`)
+                                                                document.getElementById("solution-" + solution.id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+                                                                // alert(solution.id)
+                                                            }}
                                                         >
                                                             {solution.title}
-                                                        </a>
+                                                        </button>
                                                     </li>
                                                 )
                                             })}
@@ -342,7 +368,7 @@ export default function Index() {
                                     <p className="text-lg text-neutral-800 font-medium">Helpful Links</p>
 
                                     <ul className="mt-8 space-y-4 text-sm">
-                                        <li>
+                                        {/* <li>
                                             <a
                                                 href="#"
                                                 rel="noreferrer"
@@ -350,7 +376,7 @@ export default function Index() {
                                             >
                                                 FAQs
                                             </a>
-                                        </li>
+                                        </li> */}
 
                                         <li>
                                             <a
@@ -487,6 +513,10 @@ export default function Index() {
                                 onClick={() => {
                                     setMobileMenuOpen(false)
 
+                                    setTimeout(() => {
+                                        const aboutUs = document.getElementById("about-us")
+                                        aboutUs?.scrollIntoView({ behavior: "smooth", block: "start" })
+                                    }, 500)
                                 }}
                                 className="text-left text-4xl text-white font-thin tracking-tighter md:text-7xl outline-0"
                             >
@@ -498,14 +528,17 @@ export default function Index() {
                                 variants={mobileMenuAnimationItem}
                                 onClick={() => {
                                     setMobileMenuOpen(false)
-
+                                    setTimeout(() => {
+                                        const solutions = document.getElementById("solutions")
+                                        solutions?.scrollIntoView({ behavior: "smooth", block: "start" })
+                                    }, 500)
                                 }}
                                 className="text-left text-4xl text-white font-thin tracking-tighter md:text-7xl outline-0"
                             >
-                                Solutions
+                                Our Solutions
                             </motion.button>
 
-                            <motion.button
+                            {/* <motion.button
                                 key="faqs-menu-item"
                                 variants={mobileMenuAnimationItem}
                                 onClick={() => {
@@ -515,7 +548,7 @@ export default function Index() {
                                 className="text-left text-4xl text-white font-thin tracking-tighter md:text-7xl outline-0"
                             >
                                 FAQs
-                            </motion.button>
+                            </motion.button> */}
 
                             <motion.a
                                 href="https://zenith-ai-4888.mailchimpsites.com"
@@ -538,7 +571,7 @@ export default function Index() {
                         >
                             <motion.a
                                 variants={mobileMenuAnimationItem}
-                                href="#"
+                                href="tel:2094428173"
                                 rel="noreferrer"
                                 className="text-white"
                             >
@@ -547,21 +580,13 @@ export default function Index() {
 
                             <motion.a
                                 variants={mobileMenuAnimationItem}
-                                href="#"
+                                href="mailto:hello@zenithai.site"
                                 rel="noreferrer"
                                 className="text-white"
                             >
                                 <Mail />
                             </motion.a>
 
-                            <motion.a
-                                variants={mobileMenuAnimationItem}
-                                href="#"
-                                rel="noreferrer"
-                                className="text-white"
-                            >
-                                <Linkedin />
-                            </motion.a>
                         </motion.div>
                     </div>
                 </Dialog>
