@@ -1,13 +1,11 @@
 import { useState, Fragment } from "react"
 
-import { Disclosure, Transition, Dialog } from "@headlessui/react"
+import { Transition, Dialog } from "@headlessui/react"
 import { motion } from "framer-motion"
-import { useRouter } from "next/router"
 
-import { Bird, Menu, Facebook, Instagram, Dribbble, Twitter, Github, X, Phone, Mail, Linkedin } from "lucide-react"
+import { Bird, Menu, X, Phone, Mail, Linkedin } from "lucide-react"
 
 export default function Index() {
-    const router = useRouter()
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -83,10 +81,6 @@ export default function Index() {
                             Our Solutions
                         </button>
 
-                        {/* <button onClick={() => { }} className="text-right text-md text-neutral-800 font-light tracking-tighter">
-                            FAQs
-                        </button> */}
-
                         <a href="https://zenith-ai-4888.mailchimpsites.com" rel="noreferrer" target="_blank" className="text-right text-md text-white font-light bg-neutral-900 px-4 py-2 rounded-full">
                             Book Consulation
                         </a>
@@ -149,7 +143,6 @@ export default function Index() {
                         </h1>
 
                         <p className="text-center text-lg text-white font-light tracking-tighter">
-                            {/* Zenith AI looks to help small and medium sized business grow by exploring ways cutting edge tech can make your workflows stronger, better, and faster.We pride ourselves in working as close as possible with our clients guiding them from initial implementation to unimaginable  growth.Our founding principles lays in a simple law, stating we only rake in dough, once you’re rolling in it! */}
                             Welcome! Zenith AI is dedicated to empowering businesses to reach new heights through the transformative power of cutting-edge Artificial Intelligence technology. Our mission is to enhance your workflows, making them stronger, better, and faster.
                             We take immense pride in our client-centric approach, forming close partnerships with our clients, guiding them every step of the way, from the initial implementation to unimaginable scale!
                         </p>
@@ -233,68 +226,6 @@ export default function Index() {
                                     Looking to boost leads and sales?
                                     Let us handle the heavy lifting by deploying cutting-edge technology onto your workflows!
                                 </p>
-
-                                {/* <ul className="mt-8 flex justify-center gap-6 md:justify-start md:gap-8">
-                                    <li>
-                                        <a
-                                            href="#"
-                                            rel="noreferrer"
-                                            className="text-neutral-950 transition hover:text-neutral-950/75"
-                                        >
-                                            <span className="sr-only" >Facebook</span>
-
-                                            <Facebook />
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a
-                                            href="#"
-                                            rel="noreferrer"
-                                            className="text-neutral-950 transition hover:text-neutral-950/75"
-                                        >
-                                            <span className="sr-only">Instagram</span>
-
-                                            <Instagram />
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a
-                                            href="#"
-                                            rel="noreferrer"
-                                            className="text-neutral-950 transition hover:text-neutral-950/75"
-                                        >
-                                            <span className="sr-only">Twitter</span>
-
-                                            <Twitter />
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a
-                                            href="#"
-                                            rel="noreferrer"
-                                            className="text-neutral-950 transition hover:text-neutral-950/75"
-                                        >
-                                            <span className="sr-only">GitHub</span>
-
-                                            <Github />
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a
-                                            href="#"
-                                            rel="noreferrer"
-                                            className="text-neutral-950 transition hover:text-neutral-950/75"
-                                        >
-                                            <span className="sr-only">Dribbble</span>
-
-                                            <Dribbble />
-                                        </a>
-                                    </li>
-                                </ul> */}
                             </div>
 
                             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:grid-cols-4 lg:col-span-2">
@@ -351,9 +282,7 @@ export default function Index() {
                                                         <button
                                                             className="text-neutral-800 font-light transition hover:text-neutral-800/75"
                                                             onClick={() => {
-                                                                // const solution = document.getElementById(`solution-${solutionID}`)
                                                                 document.getElementById("solution-" + solution.id)?.scrollIntoView({ behavior: "smooth", block: "start" })
-                                                                // alert(solution.id)
                                                             }}
                                                         >
                                                             {solution.title}
@@ -368,16 +297,6 @@ export default function Index() {
                                     <p className="text-lg text-neutral-800 font-medium">Helpful Links</p>
 
                                     <ul className="mt-8 space-y-4 text-sm">
-                                        {/* <li>
-                                            <a
-                                                href="#"
-                                                rel="noreferrer"
-                                                className="text-neutral-800 font-light transition hover:text-neutral-800/75"
-                                            >
-                                                FAQs
-                                            </a>
-                                        </li> */}
-
                                         <li>
                                             <a
                                                 href="https://zenith-ai-4888.mailchimpsites.com/"
@@ -434,23 +353,12 @@ export default function Index() {
                                     <span className="block md:inline">All rights reserved&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
 
                                     <a
-                                        href="#"
+                                        href="https://www.termsfeed.com/live/3dd7716e-8aea-4c24-905c-085c25dbea18"
                                         rel="noreferrer"
                                         target="_blank"
                                         className="inline-block underline transition"
                                     >
                                         Terms & Conditions
-                                    </a>
-
-                                    <span>&nbsp;&middot;&nbsp;</span>
-
-                                    <a
-                                        href="#"
-                                        rel="noreferrer"
-                                        target="_blank"
-                                        className="inline-block underline transition"
-                                    >
-                                        Privacy Policy
                                     </a>
                                 </p>
 
@@ -538,18 +446,6 @@ export default function Index() {
                                 Our Solutions
                             </motion.button>
 
-                            {/* <motion.button
-                                key="faqs-menu-item"
-                                variants={mobileMenuAnimationItem}
-                                onClick={() => {
-                                    setMobileMenuOpen(false)
-
-                                }}
-                                className="text-left text-4xl text-white font-thin tracking-tighter md:text-7xl outline-0"
-                            >
-                                FAQs
-                            </motion.button> */}
-
                             <motion.a
                                 href="https://zenith-ai-4888.mailchimpsites.com"
                                 rel="noreferrer"
@@ -585,6 +481,16 @@ export default function Index() {
                                 className="text-white"
                             >
                                 <Mail />
+                            </motion.a>
+
+                            <motion.a
+                                variants={mobileMenuAnimationItem}
+                                href="https://www.linkedin.com/company/zenith-ai-solutions"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="text-white"
+                            >
+                                <Linkedin />
                             </motion.a>
 
                         </motion.div>
