@@ -326,11 +326,11 @@ export default function Index() {
 
                                         <li>
                                             <a
-                                                href="tel:2094428173"
+                                                href="tel:3239244260"
                                                 rel="noreferrer"
                                                 className="text-neutral-800 font-light transition hover:text-neutral-800/75"
                                             >
-                                                📱&nbsp;&nbsp;&nbsp;+1 (209) 442-8173
+                                                📱&nbsp;&nbsp;&nbsp;+1 (323) 924-4260
                                             </a>
                                         </li>
 
@@ -467,7 +467,7 @@ export default function Index() {
                         >
                             <motion.a
                                 variants={mobileMenuAnimationItem}
-                                href="tel:2094428173"
+                                href="tel:3239244260"
                                 rel="noreferrer"
                                 className="text-white"
                             >
