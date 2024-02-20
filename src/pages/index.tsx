@@ -198,8 +198,8 @@ export default function Index() {
 
                         <p className="text-center text-lg font-light tracking-tighter text-neutral-800">
                             Although we are incredibly flexible in finding the
-                            tech solutions that are right for you, here are some
-                            we specialize in.
+                            tech solutions that are right for your business,
+                            here are some we specialize in.
                         </p>
 
                         {solutions.map((solution, solutionIDX) => {
