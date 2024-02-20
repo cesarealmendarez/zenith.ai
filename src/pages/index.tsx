@@ -198,7 +198,7 @@ export default function Index() {
 
                         <p className="text-center text-lg font-light tracking-tighter text-neutral-800">
                             Although we are incredibly flexible in finding the
-                            tech that's right for you, here are some solutions
+                            tech solutions that are right for you, here are some
                             we specialize in.
                         </p>
 
