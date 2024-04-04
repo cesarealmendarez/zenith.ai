@@ -94,7 +94,7 @@ export default function Index() {
                         </button>
 
                         <a
-                            href="https://zenith-ai-4888.mailchimpsites.com"
+                            href="https://calendly.com/hello-azs/online-consultation"
                             rel="noreferrer"
                             target="_blank"
                             className="text-md rounded-full bg-neutral-900 px-4 py-2 text-right font-light text-white"
@@ -146,7 +146,7 @@ export default function Index() {
 
                     <div className="flex flex-col items-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                         <a
-                            href="https://zenith-ai-4888.mailchimpsites.com"
+                            href="https://calendly.com/hello-azs/online-consultation"
                             rel="noreferrer"
                             target="_blank"
                             className="tracking-tigher w-80 rounded-full bg-neutral-900 px-6 py-4 text-center text-xl font-light text-white md:w-auto md:px-8"
@@ -262,7 +262,7 @@ export default function Index() {
                         </p>
 
                         <a
-                            href="https://zenith-ai-4888.mailchimpsites.com"
+                            href="https://calendly.com/hello-azs/online-consultation"
                             rel="noreferrer"
                             target="_blank"
                             className="w-80 rounded-full bg-neutral-950 bg-opacity-50 px-6 py-4 text-center text-xl font-light tracking-tighter text-white backdrop-blur-2xl"
@@ -398,7 +398,7 @@ export default function Index() {
                                     <ul className="mt-8 space-y-4 text-sm">
                                         <li>
                                             <a
-                                                href="https://zenith-ai-4888.mailchimpsites.com/"
+                                                href="https://calendly.com/hello-azs/online-consultation"
                                                 rel="noreferrer"
                                                 target="_blank"
                                                 className="font-light text-neutral-800 transition hover:text-neutral-800/75"
@@ -556,7 +556,7 @@ export default function Index() {
                             </motion.button>
 
                             <motion.a
-                                href="https://zenith-ai-4888.mailchimpsites.com"
+                                href="https://calendly.com/hello-azs/online-consultation"
                                 rel="noreferrer"
                                 target="_blank"
                                 key="book-consultation-menu-item"
