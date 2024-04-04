@@ -60,7 +60,7 @@ export default function Index() {
                         <Bird className="text-neutral-800" />
 
                         <h1 className="ml-2 text-left text-2xl font-medium tracking-tighter text-neutral-800">
-                            Zenith AI
+                            Zenith Web Solutions
                         </h1>
                     </a>
 
@@ -177,7 +177,7 @@ export default function Index() {
                         </h1>
 
                         <p className="text-center text-lg font-light tracking-tighter text-white">
-                            Welcome! Zenith AI is dedicated to empowering
+                            Welcome! Zenith Web Solutions is dedicated to empowering
                             businesses to reach new heights through the
                             transformative power of cutting-edge Artificial
                             Intelligence technology. Our mission is to enhance
@@ -256,7 +256,7 @@ export default function Index() {
                         </h1>
 
                         <p className="text-center text-lg font-light tracking-tighter text-white">
-                            Zenith AI is ready to start building when you are!
+                            Zenith Web Solutions is ready to start building when you are!
                             Let's chat and unlock a world of personalized
                             solutions for your business.
                         </p>
@@ -280,7 +280,7 @@ export default function Index() {
                                     <Bird className="text-neutral-800" />
 
                                     <h1 className="ml-2 text-2xl font-medium tracking-tighter text-neutral-800 md:text-left md:text-center">
-                                        Zenith AI
+                                        Zenith Web Solutions
                                     </h1>
                                 </div>
 
@@ -458,7 +458,7 @@ export default function Index() {
                                 </p>
 
                                 <p className="mt-4 text-sm text-neutral-800 md:order-first md:mt-0">
-                                    &copy;2024 Zenith AI
+                                    &copy;2024 Zenith Web Solutions
                                 </p>
                             </div>
                         </div>
@@ -491,7 +491,7 @@ export default function Index() {
                                 <Bird className="text-white" />
 
                                 <h1 className="ml-2 text-2xl font-medium tracking-tighter text-white">
-                                    Zenith AI
+                                    Zenith Web Solutions
                                 </h1>
                             </div>
 

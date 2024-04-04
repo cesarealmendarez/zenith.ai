@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="shortcut icon" href="/favicon.ico" />
-                <title>Zenith AI</title>
+                <title>Zenith Web Solutions</title>
             </Head>
 
             <style jsx global>{`
