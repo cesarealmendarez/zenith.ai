@@ -129,7 +129,7 @@ export default function Index() {
                         </h1>
 
                         <h1 className="text-center text-4xl font-medium tracking-tighter text-neutral-800 md:text-6xl">
-                            AI & Web Development Team
+                            Web Development Team
                         </h1>
                     </div>
 
@@ -370,7 +370,7 @@ export default function Index() {
                                                                 document
                                                                     .getElementById(
                                                                         "solution-" +
-                                                                            solution.id,
+                                                                        solution.id,
                                                                     )
                                                                     ?.scrollIntoView(
                                                                         {
